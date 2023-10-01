@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "f739736c-9704-49b4-8957-e849a1098140",
+		"name": "Boo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/users/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Lucy\",\n    \"email\": \"lucy@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/users/65181a79cb599386629d670a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"65181a79cb599386629d670a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/profile/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/65181a8ccb599386629d6710",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"65181a8ccb599386629d6710"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/profile/all",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Mark\",\n    \"description\": \"A fun loving, tech-savvy, and a traveler. A fun loving, tech-savvy, and a traveler. A fun loving, tech-savvy, and a traveler\",\n    \"user\": \"65196094028950ceb924622e\",\n    \"mbti\": \"ISFJ\",\n    \"enneagram\": \"9w3\",\n    \"variant\": \"sp/so\",\n    \"tritype\": 100,\n    \"socionics\": \"SEE\",\n    \"sloan\": \"RCOEN\",\n    \"psyche\": \"FEVL\",\n    \"temperaments\": \"Temp\",\n    \"image\": \"https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=1480&t=st=1696070180~exp=1696070780~hmac=5af6ed72ca4b71253c6fb089dd42b99a7239de49eef7118143d31ae2f4951927\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/profile/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"profile",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vote",
+			"item": [
+				{
+					"name": "Test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/votes/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"votes",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Options",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/votes/options",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"votes",
+								"options"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"This is a title\",\n    \"description\": \"This is a short description\",\n    \"mbti\": \"ESTJ\",\n    \"enneagram\": \"2w3\",\n    \"zodiac\": \"Taurus\",\n    \"user\": \"65196084028950ceb924622b\",\n    \"profile\": \"651960c0028950ceb9246236\",\n    \"image\": \"https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=1480&t=st=1696070180~exp=1696070780~hmac=5af6ed72ca4b71253c6fb089dd42b99a7239de49eef7118143d31ae2f4951927\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/votes/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"votes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Vote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": \"65196084028950ceb924622b\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/votes/like/65196131028950ceb924623f",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"votes",
+								"like",
+								"65196131028950ceb924623f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike Vote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": \"6519609d028950ceb9246231\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/votes/unlike/65196131028950ceb924623f",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"votes",
+								"unlike",
+								"65196131028950ceb924623f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Votes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/votes/?sortBy=best&filterByMbti=ESTJ&filterByEnneagram=2w3&filterByZodiac=Taurus&profile=651960c0028950ceb9246236",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"votes",
+								""
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "best"
+								},
+								{
+									"key": "filterByMbti",
+									"value": "ESTJ"
+								},
+								{
+									"key": "filterByEnneagram",
+									"value": "2w3"
+								},
+								{
+									"key": "filterByZodiac",
+									"value": "Taurus"
+								},
+								{
+									"key": "profile",
+									"value": "651960c0028950ceb9246236"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
